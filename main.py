@@ -148,7 +148,22 @@ import numpy as np #np is an alias
 # numbers = np.random.randint(-2,2, size=(2,3,4)) # gives random values from min to max-1, default min is 0
 # print(numbers)
 
-numbers = np.random.binomial(10, p=0.5, size=(5,10)) # how many times do you get head out of 10
-numbers = np.random.normal(loc=170, scale=15, size=(5,10)) # loc is mean, scale is std deviation
-numbers = np.random.choice([1,2,3,4,5], size=(4,2))
-print(numbers)
+# numbers = np.random.binomial(10, p=0.5, size=(5,10)) # how many times do you get head out of 10
+# numbers = np.random.normal(loc=170, scale=15, size=(5,10)) # loc is mean, scale is std deviation
+# numbers = np.random.choice([1,2,3,4,5], size=(4,2))
+# print(numbers)
+
+# a = np.array([[1,2,3,4,5,6],
+#                 [7,8,9,10,11,12],
+#                 [13,14,15,16,17,18],
+#                 [19,20,21,22,23,24]])
+# np.save("myarray.npy", a)
+
+# a = np.load("myarray.npy")
+# np.savetxt("myarray.csv", a, delimiter=',')
+
+# a = np.loadtxt("myarray.csv", delimiter=',')
+# print(a)
+
+# in numpy arrays no of elements in a list --> columns
+# no of lists --> rows 
