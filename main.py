@@ -90,3 +90,27 @@ import numpy as np #np is an alias
 # print(np.delete(a,1,0)) #0 means we are looking at rows, hence row 1 which is the second row gets deleted
 # print(np.delete(a,0,1)) #1 means we are looking at rows, hence row 0 which is the first row gets deleted
 
+# a = np.array([[1,2,3,4,5],
+#               [6,7,8,9,10],
+#               [11,12,13,14,15],
+#               [16,17,18,19,20]])
+# print(a.shape)
+# print(a.reshape(10,2)) # reshapes the array into a 10x2 array
+# print(a.reshape(20)) # reshapes the array into a 1D array of 20 elements, different from 20x1 array
+# # reshaping can only be done to those shapes compatible with the original 
+# print(a.reshape(2,5,2)) # reshapes the array into a 2x5x2 array
+# a.resize((2,2,5))
+# print(a)
+
+# print(a.flatten()) # returns a flattened(1D) copy of the original array 
+# print(a.ravel()) # returns a flattenend(1D) view of the original array, any changes made to it reflect in the original array 
+
+# print([v for v in a.flat]) # a.flat is a flattened iterable of the passed object  
+
+# a = np.array([[1,2,3,4,5],
+#               [6,7,8,9,10]])
+# print(a.transpose()) # self explanatory same as 
+# print(a.T) # same as a.transpose()
+
+# print(a.swapaxes(0,1)) # swaps the specified axes, useful when we are working with large dimensional arrays, in this case it does the same as transpose 
+
